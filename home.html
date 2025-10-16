@@ -1,5 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Renzo’s Anointed Fade Studio — Home</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Renzo's Anointed Fade Studio logo" class="logo" onerror="this.style.display='none'">
+        <span class="brand-text">Renzo’s Anointed Fade Studio</span>
+      </a>
+
+      <button id="theme-toggle" aria-label="Toggle theme" class="theme-btn">🌙</button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Where your crown gets restored — inside and out</h1>
+          <p class="lead">Step into a space of precision, prayer, and purpose. The Anointed VIP Experience awaits.</p>
+          <a class="btn primary" href="booking.html">Book The Anointed VIP Experience</a>
+        </div>
+        <div class="hero-image">
+          <!-- placeholder image -->
+          <div class="placeholder-photo">Drop gallery photos in the gallery page</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services container">
+      <h2>Signature Services</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <h3>The Anointed VIP Experience</h3>
+          <p>Steam treatment, deep cleanse, scalp care & precision fade — restorative grooming. <strong>Book via Booking page.</strong></p>
+        </div>
+        <div class="service-card">
+          <h3>Classic Fade</h3>
+          <p>Clean lines, detailed tapering — tailored to your crown.</p>
+        </div>
+        <div class="service-card">
+          <h3>Beard Sculpt & Care</h3>
+          <p>Shape, trim, and nourish — precision and presentation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta container">
+      <h2>Ready to restore your crown?</h2>
+      <a class="btn secondary" href="booking.html">Book Now</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025<span id="year"></span> Renzo’s Anointed Fade Studio — <a href="booking.html">Book Now</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+</html>
