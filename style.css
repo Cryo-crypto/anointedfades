@@ -1,0 +1,114 @@
+:root{
+  --gold: #C49A2C;
+  --bg: #ffffff;
+  --text: #111217;
+  --muted: #555b5f;
+  --container-width: 1100px;
+
+  --radius: 14px;
+  --glass: rgba(255,255,255,0.6);
+}
+/* Fonts*/
+.unifrakturcook-bold {
+  font-family: "UnifrakturCook", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.oi-regular {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Fonts*/
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin: 0 auto;
+  font-family: "UnifrakturCook", cursive;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  transition: background .25s, color .25s;
+  line-height:1.5;
+}
+
+/* Dark theme variables */
+body.dark{
+  --bg: #0a0a0a;
+  --text: #f6f6f6;
+  --muted: #bdbdbd;
+  --glass: rgba(0,0,0,0.6);
+}
+
+/* Utility */
+.container{max-width:var(--container-width);margin:0 auto;padding:1.25rem}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* Header / Nav */
+.site-header{
+  backdrop-filter: blur(6px);
+  position:sticky;top:0;z-index:50;
+  background:linear-gradient(180deg, rgba(0,0,0,0.02), transparent);
+}
+.nav{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  padding:.7rem 0;
+}
+.brand{display:flex;align-items:center;gap:.8rem;text-decoration:none}
+.logo{height:48px;width:auto;border-radius:8px;object-fit:contain}
+.brand-text{font-family:"UnifrakturCook", cursive;font-weight:600;color:var(--text);font-size: 2rem; }
+
+/* nav links */
+.nav-links{list-style:none;display:flex;gap:.6rem;margin-left:auto;align-items:center;padding:0}
+.nav-links a{padding:.55rem .7rem;border-radius:8px;color:var(--text);font-weight:600}
+.nav-links a.active, .nav-links a:hover{background:rgba(0,0,0,0.05)}
+body.dark .nav-links a.active, body.dark .nav-links a:hover{background:rgba(255,255,255,0.04)}
+
+/* menu for small screens */
+.menu-toggle{display:none;background:none;border:none;font-size:1.3rem;margin-left:8px}
+.theme-btn{background:none;border:1px solid transparent;padding:.4rem .5rem;border-radius:8px;font-size:1.05rem;cursor:pointer}
+
+/* Hero */
+.hero{padding:3.5rem 0}
+.hero-inner{display:flex;gap:2rem;align-items:center;flex-wrap:wrap}
+.hero-text{flex:1;min-width:260px}
+.hero h1{font-family:"UnifrakturCook", cursive;font-size:2rem;margin:0 0 .8rem}
+.lead{color:var(--muted);margin-bottom:1rem}
+.hero-image{flex:1;min-width:260px;display:flex;align-items:center;justify-content:center}
+.placeholder-photo{width:100%;height:220px;border-radius:12px;background:linear-gradient(135deg, rgba(0,0,0,0.03), rgba(0,0,0,0.02));display:flex;align-items:center;justify-content:center;color:var(--muted)}
+
+/* Buttons */
+.btn{display:inline-block;padding:.65rem 1rem;border-radius:10px;font-weight:600;text-align:center;border:none;cursor:pointer}
+.btn.primary{background:var(--gold);color:#fff;box-shadow:0 6px 18px rgba(196,154,44,0.18)}
+.btn.primary.large{padding:1rem 1.2rem;font-size:1.05rem}
+.btn.secondary{background:transparent;color:var(--text);border:2px solid var(--gold)}
+
+/* Services */
+.services{padding:2rem 0}
+.service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.service-card{background:var(--glass);padding:1rem;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.04)}
+
+/* CTA */
+.cta{padding:2rem 0;text-align:center}
+
+/* Contact / forms */
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:1.25rem}
+.contact-card{background:var(--glass);padding:1rem;border-radius:10px}
+.contact-form label{display:block;margin-bottom:.8rem}
+.contact-form input, .contact-form textarea{width:100%;padding:.6rem;border-radius:8px;border:1px solid rgba(0,0,0,0.08);background:transparent;color:inherit}
+
+/* Footer */
+.site-footer{padding:1.25rem 0;border-top:1px solid rgba(0,0,0,0.04);text-align:center;color:var(--muted)}
+
+/* Responsive */
+@media(max-width:900px){
+  .nav-links{display:none;position:absolute;top:68px;right:12px;background:var(--glass);flex-direction:column;padding:.5rem;border-radius:8px;min-width:180px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+  .menu-toggle{display:block}
+  .hero-inner{flex-direction:column-reverse}
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Renzo’s Anointed Fade Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="logo" class="logo" onerror="this.style.display='none'">
+        <span class="brand-text">Renzo’s Anointed Fade Studio</span>
+      </a>
+
+      <button id="theme-toggle" aria-label="Toggle theme" class="theme-btn">🌙</button>
+
+      <ul class="nav-links" id="nav-links-4">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menu-toggle-4" aria-label="Toggle menu">☰</button>
+    </nav>
+  </header>
+
+  <main class="container contact-main">
+    <h1>Contact</h1>
+    <p>Questions, appointment details, or special requests — reach out below.</p>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Phone</h3>
+        <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+      </div>
+      <div class="contact-card">
+        <h3>Email</h3>
+        <p><a href="mailto:renzo@example.com">renzo@example.com</a></p>
+      </div>
+      <div class="contact-card">
+        <h3>Booking</h3>
+        <p><a href="booking.html">Booking page / Linktree</a></p>
+      </div>
+    </div>
+
+    <form class="contact-form" action="mailto:renzo@example.com" method="post" enctype="text/plain">
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button class="btn primary" type="submit">Send Email</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year-4"></span> Renzo’s Anointed Fade Studio</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
