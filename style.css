@@ -11,12 +11,12 @@
 /* Fonts*/
 @font-face {
     font-family: 'Higuen';
-    src: url('fonts/Higuen-Regular.eot');
+    src: url('./fonts/Higuen-Regular.eot');
     src: local('Higuen Regular'), local('Higuen-Regular'),
-        url('fonts/Higuen-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Higuen-Regular.woff2') format('woff2'),
-        url('fonts/Higuen-Regular.woff') format('woff'),
-        url('fonts/Higuen-Regular.ttf') format('truetype');
+        url('./fonts/Higuen-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Higuen-Regular.woff2') format('woff2'),
+        url('./fonts/Higuen-Regular.woff') format('woff'),
+        url('./fonts/Higuen-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
