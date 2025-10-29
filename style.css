@@ -9,24 +9,25 @@
   --glass: rgba(255,255,255,0.6);
 }
 /* Fonts*/
-.unifrakturcook-bold {
-  font-family: "UnifrakturCook", cursive;
-  font-weight: 700;
-  font-style: normal;
+@font-face {
+    font-family: 'Higuen';
+    src: url('fonts/Higuen-Regular.eot');
+    src: local('Higuen Regular'), local('Higuen-Regular'),
+        url('fonts/Higuen-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Higuen-Regular.woff2') format('woff2'),
+        url('fonts/Higuen-Regular.woff') format('woff'),
+        url('fonts/Higuen-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
-.oi-regular {
-  font-family: "Oi", serif;
-  font-weight: 400;
-  font-style: normal;
-}
 /* Fonts*/
-
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
   margin: 0 auto;
-  font-family: "UnifrakturCook", cursive;
+  font-family: system-ui, -apple-system, sans-serif;
   background:var(--bg);
   color:var(--text);
   -webkit-font-smoothing:antialiased;
@@ -62,7 +63,7 @@ a:hover{text-decoration:underline}
 }
 .brand{display:flex;align-items:center;gap:.8rem;text-decoration:none}
 .logo{height:48px;width:auto;border-radius:8px;object-fit:contain}
-.brand-text{font-family:"UnifrakturCook", cursive;font-weight:600;color:var(--text);font-size: 2rem; }
+.brand-text{font-family:"Higuen", cursive;font-weight:600;color:var(--text);font-size: 2rem; }
 
 /* nav links */
 .nav-links{list-style:none;display:flex;gap:.6rem;margin-left:auto;align-items:center;padding:0}
@@ -78,7 +79,7 @@ body.dark .nav-links a.active, body.dark .nav-links a:hover{background:rgba(255,
 .hero{padding:3.5rem 0}
 .hero-inner{display:flex;gap:2rem;align-items:center;flex-wrap:wrap}
 .hero-text{flex:1;min-width:260px}
-.hero h1{font-family:"UnifrakturCook", cursive;font-size:2rem;margin:0 0 .8rem}
+.hero h1{font-family:"Higuen", cursive;font-size:2rem;margin:0 0 .8rem}
 .lead{color:var(--muted);margin-bottom:1rem}
 .hero-image{flex:1;min-width:260px;display:flex;align-items:center;justify-content:center}
 .placeholder-photo{width:100%;height:220px;border-radius:12px;background:linear-gradient(135deg, rgba(0,0,0,0.03), rgba(0,0,0,0.02));display:flex;align-items:center;justify-content:center;color:var(--muted)}
